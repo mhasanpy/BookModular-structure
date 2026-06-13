@@ -6,90 +6,181 @@
     Delete a book")
     Ghost book")
     Exit")
+# 📚 Book Management System
 
-# BookModular-structure
-A Book Management System (BMS) is software designed to manage, organize, and track all book-related operations in libraries, bookstores, educational institutions, or personal collections. It automates manual record-keeping processes, making them more efficient, accurate, and user-friendly.
-# 📚 BookModular-structure
+A simple command-line based Book Management System developed in Python. This application allows users to manage a book inventory by adding, viewing, searching, updating, selling, and deleting books.
 
-![Python](https://img.shields.io/badge/Python-3.x-blue.svg)
-![License](https://img.shields.io/badge/License-MIT-green)
+---
 
-A modular **Book Management System (BMS)** built with Python to manage, organize, and track book-related operations in libraries, bookstores, educational institutions, or personal collections. The system automates manual record-keeping processes, making them efficient, accurate, and user-friendly.
+## 📖 Project Description
+
+The Book Management System is designed to help users maintain a collection of books and their quantities. It provides an interactive menu-driven interface where users can perform various inventory management operations.
+
+### Input
+
+The program accepts user input through the terminal, including:
+
+* Book name
+* Book quantity
+* Menu selection options
+* Search keywords
+
+### Output
+
+The program displays:
+
+* Book inventory details
+* Search results
+* Success and error messages
+* Updated inventory information
 
 ---
 
 ## ✨ Features
 
-- **Modular design** – Each functionality is separated into independent modules for easy maintenance.
-- **Book operations** – Add, view, search, update, and delete books.
-- **User-friendly menu** – Interactive console-based interface.
-- **Extensible** – Can be expanded with borrowing, returns, fines, and user authentication modules.
+### 1. Create a Book
+
+Add a new book to the inventory with an initial quantity.
+
+### 2. List Books
+
+Display all available books along with their quantities.
+
+### 3. Sell Books
+
+Search for a book and reduce its quantity when sold.
+
+### 4. Update Book Information
+
+Modify the quantity of an existing book.
+
+### 5. Delete Books
+
+Remove a book from the inventory.
+
+### 6. Search Books
+
+Find books by name and view their details.
+
+### 7. Exit System
+
+Close the application safely.
+
+---
+
+## 🛠️ Technology Used
+
+### Programming Language
+
+* Python 3
+
+### Python Modules Used
+
+#### Built-in Packages
+
+* No external packages are required.
+
+#### Project Modules
+
+* `main.py`
+* `menu.py`
+* `msg.py`
+* `heading.py`
+* `create.py`
+* `search.py`
+* `update.py`
+* `delete.py`
+* `inventory.py`
 
 ---
 
 ## 📂 Project Structure
 
-
-
-BookModular-structure/
+```text
+Book-Management-System/
 │
-├── heading.py # Header / banner display
-├── menu.py # Main menu and user interaction flow
-├── messaage.py # Message templates (welcome, errors, confirmations)
-├── Use_Function_book management system.py # Core business logic (CRUD operations)
-└── README.md # Project documentation
-
-
+├── main.py
+├── menu.py
+├── msg.py
+├── heading.py
+├── create.py
+├── search.py
+├── update.py
+├── delete.py
+├── inventory.py
+└── README.md
+```
 
 ---
 
-## 🚀 Getting Started
+## ⚙️ Installation Process
 
-### Prerequisites
+### Step 1: Clone the Repository
 
-- Python 3.x installed on your system
-- No external libraries required (uses only Python standard library)
+```bash
+git clone https://github.com/your-username/book-management-system.git
+```
 
-### Installation
+### Step 2: Navigate to the Project Directory
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/mhasanpy/BookModular-structure.git
-   cd BookModular-structure
-Run the application
+```bash
+cd book-management-system
+```
 
-bash
-python menu.py
-🎮 Usage
-Once the application starts, follow the on-screen menu to:
+### Step 3: Verify Python Installation
 
-Option	Action
-1	Add a new book
-2	View all books
-3	Search for a book
-4	Update book details
-5	Delete a book
-6	Exit
-All book data is stored temporarily in memory during the session. You can extend it to use a file or database.
+```bash
+python --version
+```
 
-🧩 Modular Breakdown
-Module File	Responsibility
-heading.py	Displays the system banner / title header
-menu.py	Shows the main menu and routes user choices
-messaage.py	Stores reusable prompt/error/success messages
-Use_Function_book management system.py	Core functions for book CRUD operations
-This separation allows you to modify or replace any module (e.g., switch to a GUI or database) without rewriting the entire system.
+or
 
-📈 Future Enhancements (Ideas)
-Persistent storage using JSON file or SQLite database
+```bash
+python3 --version
+```
 
-Borrow & return module with due dates
+---
 
-User authentication (admin/member roles)
+## ▶️ Running the Application
 
-Fine calculation for overdue books
+Run the following command from the project directory:
 
-Graphical user interface (Tkinter / web-based)
+```bash
+python main.py
+```
+
+or
+
+```bash
+python3 main.py
+```
+
+---
+
+## 🖥️ Example Menu
+
+```text
+1. Create New Book
+2. List of Books
+3. Sell Books
+4. Update Books
+5. Delete Books
+0. Exit
+```
+
+---
+
+## 🚀 Future Improvements
+
+* File-based data storage
+* Database integration (SQLite/MySQL)
+* User authentication
+* Report generation
+* GUI version using Tkinter
+
+## 📄 License
+
+This project is created for educational and learning purposes.
 
 🤝 Contributing
 Contributions are welcome!
