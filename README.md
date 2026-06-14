@@ -82,15 +82,13 @@ Close the application safely.
 
 #### Project Modules
 
-* `main.py`
-* `menu.py`
-* `msg.py`
-* `heading.py`
-* `create.py`
-* `search.py`
-* `update.py`
-* `delete.py`
-* `inventory.py`
+ * Create new book")
+  * List of books")
+   * Sell a book")
+    *Update book qty")
+    *Delete a book")
+    *Ghost book")
+    *Exit")
 
 ---
 
@@ -103,11 +101,8 @@ Book-Management-System/
 ├── menu.py
 ├── msg.py
 ├── heading.py
-├── create.py
 ├── search.py
 ├── update.py
-├── delete.py
-├── inventory.py
 └── README.md
 ```
 
