@@ -58,9 +58,9 @@ Modify the quantity of an existing book.
 
 Remove a book from the inventory.
 
-### 6. Search Books
+### 6. Ghost book
 
-Find books by name and view their details.
+Find books by name details.
 
 ### 7. Exit System
 
